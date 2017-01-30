@@ -1,0 +1,48 @@
+﻿<Page x:Class="DAI_TAKU_Fansub_Utility_3._0_Rev._2.Encode"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DAI_TAKU_Fansub_Utility_3._0_Rev._2"
+      mc:Ignorable="d" 
+      d:DesignHeight="570" d:DesignWidth="650"
+      Title="Encode">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="RawInput" Text="Raw" Height="25" VerticalAlignment="Top" Width="450" IsReadOnly="True" Margin="50 40 0 0" BorderThickness="1" Background="White" Opacity="0.5" ToolTip="Raw" MaxLines="1"/>
+                <TextBlock Text="Browse" Margin="50 43 0 0" FontWeight="Bold" Foreground="Gray" MouseLeftButtonDown="RawBrowse"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="SubInput" Text="Sub" Height="25" VerticalAlignment="Top" Width="450" IsReadOnly="True" Margin="50 40 0 0" BorderThickness="1" Background="White" Opacity="0.5" ToolTip="Sub" MaxLines="1"/>
+                <TextBlock Text="Browse" Margin="50 43 0 0" FontWeight="Bold" Foreground="Gray" MouseLeftButtonDown="SubBrowse"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="CreditInput" Text="Credit" Height="25" VerticalAlignment="Top" Width="450" IsReadOnly="True" Margin="50 40 0 0" BorderThickness="1" Background="White" Opacity="0.5" ToolTip="Credit" MaxLines="1"/>
+                <TextBlock Text="Browse" Margin="50 43 0 0" FontWeight="Bold" Foreground="Gray" MouseLeftButtonDown="CreditBrowse"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="OPInput" Text="OP" Height="25" VerticalAlignment="Top" Width="450" IsReadOnly="True" Margin="50 40 0 0" BorderThickness="1" Background="White" Opacity="0.5" ToolTip="OP" MaxLines="1"/>
+                <TextBlock Text="Browse" Margin="50 43 0 0" FontWeight="Bold" Foreground="Gray" MouseLeftButtonDown="OPBrowse"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="EDInput" Text="ED" Height="25" VerticalAlignment="Top" Width="450" IsReadOnly="True" Margin="50 40 0 0" BorderThickness="1" Background="White" Opacity="0.5" ToolTip="ED" MaxLines="1"/>
+                <TextBlock Text="Browse" Margin="50 43 0 0" FontWeight="Bold" Foreground="Gray" MouseLeftButtonDown="EDBrowse"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="Output" Text="Output" Height="25" VerticalAlignment="Top" Width="450" IsReadOnly="True" Margin="50 40 0 0" BorderThickness="1" Background="White" Opacity="0.5" ToolTip="Output" MaxLines="1"/>
+                <TextBlock Text="Browse" Margin="50 43 0 0" FontWeight="Bold" Foreground="Gray" MouseLeftButtonDown="OutputBrowse"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="50 30 0 0">
+                <ComboBox x:Name="ResolutionCombo" Height="25" Width="55" SelectedIndex="0" Foreground="Gray" >
+                    <ComboBoxItem Content="HD" Foreground="Gray" />
+                    <ComboBoxItem Content="FHD" Foreground="Gray" />
+                </ComboBox>
+                <CheckBox Content="FLAC Audio" x:Name="FLAC" Margin="50 5 0 0" FontWeight="Light" Foreground="Gray" IsChecked="False" Checked="FLAC_Checked"/>
+                <CheckBox Content="AVS Only" x:Name="AVS" Margin="36 5 0 0" FontWeight="Light" Foreground="Gray" IsChecked="False"/>
+            </StackPanel>
+            <TextBlock Text="Run" Margin="0 30 0 0" FontWeight="Bold" HorizontalAlignment="Center" Foreground="Gray" FontSize="40" MouseLeftButtonDown="EncodingStart"/>
+        </StackPanel>
+    </Grid>
+</Page>

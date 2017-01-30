@@ -1,0 +1,64 @@
+﻿<Window x:Class="DAI_TAKU_Fansub_Utility_3._0_Rev._2.MainWindow"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Height="610"
+        Width="810"
+        AllowsTransparency="True"
+        Background="Transparent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DAI_TAKU_Fansub_Utility_3._0_Rev._2"
+        mc:Ignorable="d"
+        Icon="./Resources/Daitaku.ico"
+        Title="MainWindow">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border Background="White" CornerRadius="2,0,0,2" Width="150" Height="600" Opacity="0.8" MouseLeftButtonDown="Drag" >
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="1" Opacity="0.5" BlurRadius="5" />
+                </Border.Effect>
+            </Border>
+            <Border Background="White" CornerRadius="0,2,2,0" Width="650" Height="600" MouseLeftButtonDown="Drag" >
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="1" Opacity="0.5" BlurRadius="5"/>
+                </Border.Effect>
+            </Border>
+        </StackPanel>
+        <Grid>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Grid Width="150" Height="600">
+                    <Image RenderOptions.BitmapScalingMode="HighQuality" x:Name="Logo" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Resources/DAI.PNG" Height="30" Stretch="Uniform" Margin="5" Opacity="0.7"/>
+                    <Grid Margin="15,100,0,0" >
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <Image RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Resources/Edit File.png" Height="20" Stretch="Uniform" Margin="0 28 0 0" Opacity="0.7"/>
+                                <TextBlock Margin="10 30 0 0" Foreground="Gray" HorizontalAlignment="Left" FontWeight="Bold" MouseLeftButtonDown="aqs" >AutoQuoteSub</TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Resources/Create New.png" Height="20" Stretch="Uniform" Margin="0 28 0 0" Opacity="0.7"/>
+                                <TextBlock Margin="10 30 0 0" Foreground="Gray" HorizontalAlignment="Left" FontWeight="Bold" MouseLeftButtonDown="encode" >Encode</TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Resources/Attention.png" Height="20" Stretch="Uniform" Margin="0 28 0 0" Opacity="0.7"/>
+                                <TextBlock Margin="10 30 0 0" Foreground="Gray" HorizontalAlignment="Left" FontWeight="Bold" MouseLeftButtonDown="about" >About</TextBlock>
+                            </StackPanel>
+                            <TextBlock Margin="10 80 0 0" Foreground="Gray" HorizontalAlignment="Left" FontWeight="Bold" >Encoding Status</TextBlock>
+                            <TextBlock x:Name="EncodingStatus" Margin="20 10 0 0" Foreground="Gray" HorizontalAlignment="Left" FontWeight="Light" Text="No Encoding In Progress" FontSize="10" />
+                            <StackPanel Orientation="Horizontal" MouseLeftButtonDown="Facebook">
+                                <Image RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" VerticalAlignment="Top" Source="Resources/Facebook.png" Height="20" Stretch="Uniform" Margin="0 198 0 0" Opacity="0.7" />
+                                <TextBlock Margin="10 200 0 0" Foreground="Gray" HorizontalAlignment="Left" FontWeight="Bold" >DAI-TAKU</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Grid Width="650" Height="600">
+                    <Image RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment ="Right" VerticalAlignment="Top" Source="Resources/Delete.png" Height="20" Stretch="Uniform" Margin="5" Opacity="0.7" MouseLeftButtonDown="Exit"/>
+                    <Frame x:Name="Page" NavigationUIVisibility="Hidden" Height="570" Width="650" VerticalAlignment="Bottom" />
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
+

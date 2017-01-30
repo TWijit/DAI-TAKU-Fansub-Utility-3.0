@@ -1,0 +1,9 @@
+﻿<Application x:Class="DAI_TAKU_Fansub_Utility_3._0_Rev._2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DAI_TAKU_Fansub_Utility_3._0_Rev._2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

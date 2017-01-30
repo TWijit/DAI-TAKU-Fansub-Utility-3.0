@@ -1,0 +1,17 @@
+﻿<Page x:Class="DAI_TAKU_Fansub_Utility_3._0_Rev._2.About"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DAI_TAKU_Fansub_Utility_3._0_Rev._2"
+      mc:Ignorable="d" 
+      d:DesignHeight="570" d:DesignWidth="650"
+      Title="About">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Image RenderOptions.BitmapScalingMode="HighQuality" VerticalAlignment="Top" Margin="0,30,0,0" Source="Resources/DAITAKU.JPG" Height="100" Stretch="Uniform"/>
+            <TextBlock FontSize="16" Margin="50 50 50 0" FontWeight="ExtraLight" TextWrapping="Wrap" VerticalAlignment="Center" Text="DAI-TAKU Utility 3.0 is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.&#10; &#10;DAI-TAKU Utility 3.0 is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.&#10;&#10;You should have received a copy of the GNU General Public License along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.&#10;&#10;&#10;&#10;DAI-TAKU Utility 3.0  Copyright 2016-2017 DAI-TAKU" />
+        </StackPanel>
+    </Grid>
+</Page>
